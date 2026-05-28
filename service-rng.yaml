@@ -10,3 +10,4 @@ spec:
     port: 80
   selector:
     app: rng
+    active: "yes"

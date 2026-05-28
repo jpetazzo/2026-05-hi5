@@ -12,6 +12,7 @@ spec:
     metadata:
       labels:
         app: rng
+        active: "yes"
     spec:
       containers:
       - image: dockercoins/rng:v0.1
