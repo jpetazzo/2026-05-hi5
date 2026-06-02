@@ -1,0 +1,15 @@
+---
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: toto
+  namespace: default
+spec:
+  encryptedData:
+    password: AgA0JxyZYysEvdH8KhOVoG+UCbTfNFOWpeT26dlNzrwWRBzUmGOM03x3W1fHIKonwhvvRhNXBDVEvSPJTlhXMoAMzw0Rbo+doOtsr2Z15/H4je/E7+7W1FVnF3tvQkf6xeiviKxMO1Ib6UsIMdeSiA8zl6OrSMwLBcyYPnEFidorcvl/pqwryVciYBmDP9LHyV8z5nPhxeRhm7cRmlcGanxVZTvQ5mwCxO5REgcpeTS9aM69mKiklkvxsqpPGLu9iwF/4fUCJcm5aJPSh3s+miKtaWr839wdSXx2onSQ1+nmxF8sK9kEDMJH7Alc7zdR0mgbp4K9mWxo1T+ChGBxXJ+8nscufN6csYfrW4RjbOlQzxoNQgZKZZzS58cCoq7E+dpOzjaAkmNMfowpg34x7t7K5dctX56Oel+K5nTv8kJvYEV9kTlbTxeFbGRm49deaDOh03cI0USBqRmD4lKMq9aIiFc2/DzIPNizML2DJjXeNe8U4BrGHGeX6okYbvk+VTVr3WNoy8a+10wC2tAOZzUi+6rko8b2gKM+3Aus7y2edxjZaGdHaYrN0JD95RQ9OdebRSEGMcln9Yvc0bjae3YggNQgpzVJnE3c6Qq/APudEutR02S/uVr0hfbUukcDLuT556fqsURLCCnC/ryVARbMuoadxw67t3qEk5kIGqqfjPIh7ZSPqGcoUImER68aiCWB9n5zEQywQOj2+SBBg/D4SkI8bQG8Q8h0r2+S
+  template:
+    metadata:
+      creationTimestamp: null
+      name: toto
+      namespace: default
