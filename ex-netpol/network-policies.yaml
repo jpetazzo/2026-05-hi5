@@ -1,0 +1,47 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: private
+spec:
+  podSelector:
+    matchLabels:
+      security: private
+  ingress: []
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: public
+spec:
+  podSelector:
+    matchLabels:
+      security: public
+  ingress:
+  - from: []
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: namespace
+spec:
+  podSelector:
+    matchLabels:
+      security: namespace
+  ingress:
+  - from:
+    - podSelector: {}
+
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: default
+spec:
+  podSelector:
+    matchExpressions:
+    - key: security
+      operator: NotIn
+      values: [ public, private, namespace ]
+  ingress: []
+
