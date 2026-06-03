@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: app
+  name: app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app
+  template:
+    metadata:
+      labels:
+        app: app
+    spec:
+      containers:
+      - image: jpetazzo/color
+        name: color
+        env:
+        - name: LOGGING_API_TOKEN
+          valueFrom:
+            secretKeyRef:
+              name: logging-api-token
+              key: token
+        - name: DATABASE_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: database-password
+              key: password

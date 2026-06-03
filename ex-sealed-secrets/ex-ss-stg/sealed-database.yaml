@@ -1,0 +1,15 @@
+---
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: database-password
+  namespace: ex-ss-stg
+spec:
+  encryptedData:
+    password: AgB6B3Wpkc1BtBHEQ6uL1f0LdxRs4mpDLM7CM5o60BH//pP1UG+Y5rEPCOYEuR1R2nNwegszXgUSHgFnvGS5Q2XUqVpt8JueC1+alblF5hZyWdNMRfj8DOKU3ZyfcDnl82xqNosAWxTk2sLK99LywdDh1YhgtgMQPoyjb0mBhP7SVHC5yAoYmyJqtZ6RqCR6FHhaLJymdFIqCk1MY28oxxRhWoH7ypignGIFLXDVNiUtzRmiz0knr+i7StiBR3WKK0Vb+GQnBiE38SzTt28g2JMkTUVSJ7WyQgNxxPHu2NOdPyWsSj2fxWbvLLaaGGeIFwEHF39UG0P8VOKNS9Om8cmOY+sPk3onYWOxOmsPoM7iH5khgwMpHEPt1C46L1h9FKyTYFacXV+c3X9DM+R4p2EYjIKPrWPC8x5KHiYJvG8/CQXIiooDaeOjGfQmLBfm5P/5EWvU7pujZv6aN/jd6wYybXF1Zmzq/02OGcvYqalO9vl+Slr1mkdUEfkVA/GLMS6PFwKqJ+D3j/KepawntU3QlVqM42rsMT8Jz2zkXWu3BBPdTgtOP33wrARctnrDvbe/I1m6h5ys3KiSW/p+7QOg/zmmgHAm9E+E50iErWaIROAEY7zjyyZN7dzvNAtumHuv9QNKcsJTYHpARgHvZALf4qXDXg5FBNioMXvegeYXkSm8fUqvuf4WKKwUxQiYvBn9r9bRFz/ECq6AOTYjtMh+0gTdPas08A==
+  template:
+    metadata:
+      creationTimestamp: null
+      name: database-password
+      namespace: ex-ss-stg
