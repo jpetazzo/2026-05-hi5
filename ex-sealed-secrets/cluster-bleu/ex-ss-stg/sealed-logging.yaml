@@ -1,0 +1,15 @@
+---
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: logging-api-token
+  namespace: ex-ss-stg
+spec:
+  encryptedData:
+    token: AgBIUTlp4h4iyQQM7noKeG9DQrVSBJTTtIosa5//Qv21qvZ8utGMsmfjCWqjxvDX0E3P7OxJOcy9kvMHi8HquOUn8WC6iipvakO1ju47YmFlr7y12qq4dZRxtWhOsGBzeVmfICVmnW+mpArrY9jP5VSwnQGVuadbgYjLuaXIXBRH2Bt4H6/m9/sk/POUlj7G3QYTWEpw/v5ocQXrivKdS7YbHwLsS2RRhLql4B/ogvlVKI08Xac/I7wN+Bs0JWnb1D+TrPBgIlLJSebcVO97mai/3JBlNw8YqMLxfYJTKYNSHTbmrUaDWAGBD3j+4rPT9JMq/qzZ1vTVdwrSBCUkG1y6uBG8GeChD85b8lgVSh5gvh9f70InFYdcffIaWQGUVmdnQ/7X2DjsRuOi253b0zlh8UmAyRVpdIB0y3A6wc0eXBjX2p5ExqEyZ7QD8lQnXZn9gxjgh61nQ+OnJXIbi4qi47S0rlqEnbhJ01ix58tRDIu5SUMoYacWvq/DG/JRyCTb2QxZcaSXQOOkwL4TOZur23KWymekVtJU2sP9RBFx/owWK4VbzR/X1Q/SU5pOk1r0Zacoh1PNHyjCR9VDtFzylTt1pTOrNI/VMDBlMOjtlWs1Y0jUN7kyS632jqd1GAxmAgErhKE7v1AJjHmXkbLl3pdolLYp1DJIy614iiRtEz5WTLbr5ln8ZxfRKyLsdfEnCnKBOE8PuUg6tyo=
+  template:
+    metadata:
+      creationTimestamp: null
+      name: logging-api-token
+      namespace: ex-ss-stg
