@@ -1,0 +1,16 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  creationTimestamp: "2026-06-03T08:20:52Z"
+  name: alice
+  namespace: ex-ss-prd
+  resourceVersion: "1782644"
+  uid: 8712adb5-30c1-4f94-9b4f-96d3e22c4728
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: alice
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: User
+  name: alice
