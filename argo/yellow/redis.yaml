@@ -20,5 +20,6 @@ spec:
     path: charts/generic
     repoURL: https://github.com/jpetazzo/2026-05-hi5
   syncPolicy:
+    automated: {}
     syncOptions:
     - CreateNamespace=true
