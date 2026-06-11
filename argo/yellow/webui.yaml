@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: helmcoins-webui
+  namespace: argocd
+spec:
+  destination:
+    namespace: argo-helmcoins
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    helm:
+      releaseName: webui
+      valuesObject:
+        service:
+          type: NodePort
+    path: charts/generic
+    repoURL: https://github.com/jpetazzo/2026-05-hi5
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
