@@ -90,24 +90,3 @@ spec:
   values:
     service: false
 ---
-apiVersion: helm.toolkit.fluxcd.io/v2
-kind: HelmRelease
-metadata:
-  name: webui
-  namespace: flux-system
-spec:
-  chart:
-    spec:
-      chart: charts/generic
-      reconcileStrategy: ChartVersion
-      sourceRef:
-        kind: GitRepository
-        name: flux-system
-  install:
-    createNamespace: true
-  interval: 1m0s
-  releaseName: webui
-  targetNamespace: app-helmcoins
-  values:
-    service:
-      type: NodePort
