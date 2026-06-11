@@ -1,0 +1,30 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: app-kubercoins
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: kubercoins
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  ref:
+    branch: kustomize
+  url: https://github.com/jpetazzo/kubercoins
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: kubercoins
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  path: /
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: kubercoins
+  targetNamespace: app-kubercoins
