@@ -1,0 +1,4 @@
+readinessProbe:
+  httpGet:
+    port: 80
+    path: /1
