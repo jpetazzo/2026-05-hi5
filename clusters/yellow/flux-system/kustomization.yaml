@@ -4,6 +4,6 @@ resources:
 - gotk-components.yaml
 - gotk-sync.yaml
 - ../../../apps/blue/flux.yaml
-- ../../../apps/dockercoins/flux.yaml
+#- ../../../apps/dockercoins/flux.yaml
 - ../../../apps/kubercoins/flux.yaml
 - ../../../apps/helmcoins/flux.yaml
